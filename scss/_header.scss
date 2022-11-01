@@ -1,0 +1,94 @@
+/*--DESDE ACA HEADER--*/
+.df-header {
+    font-size: $font-10px*2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-rojo;
+    padding: $pixel-10px*2;
+    list-style: none;
+
+    ul {
+        a {
+            display: block;
+            color: $color-blanco;
+            text-decoration: none;
+            font-size: $font-15px;
+            padding: ($pixel-10px/2);
+            font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+        }
+
+        li {
+            position: relative;
+            margin: $pixel-10px;
+            padding: 0;
+
+            &:hover {
+                background: $color-rojo-claro2;
+                padding-right: $pixel-10px*2;
+
+                >ul {
+                    display: block;
+                }
+            }
+        }
+
+        ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: $color-rojo;
+
+            li {
+                float: none;
+                width: $pixel-100px*2;
+            }
+
+            a {
+                line-height: 120%;
+                padding: $pixel-10px $pixel-15px;
+            }
+        }
+    }
+}
+
+.df-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: $pixel-10px;
+    padding: $pixel-10px*2;
+
+    li {
+        margin: $pixel-10px*2;
+        font-family: 'Karla', sans-serif;
+        list-style-type: none;
+    }
+}
+
+.df-nombre {
+    color: $color-blanco;
+    font-family: 'Karla', sans-serif;
+    font-weight: 900;
+}
+
+.logo {
+    font-size: $font-10px*2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        margin: $pixel-10px;
+    }
+}
+
+.w-logo {
+    width: $pixel-100px+$pixel-10px*2;
+}
+
+
+/*--HASTA ACA HEADER--*/

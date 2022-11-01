@@ -1,0 +1,26 @@
+{
+  "name": "entrega-coderhouse",
+  "version": "1.0.0",
+  "description": "mi primer sass",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass scss:css",
+    "watch": "sass scss:css –watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andresp84/entrega-coderhouse.git"
+  },
+  "author": "andres pelaez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andresp84/entrega-coderhouse/issues"
+  },
+  "homepage": "https://github.com/Andresp84/entrega-coderhouse#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}

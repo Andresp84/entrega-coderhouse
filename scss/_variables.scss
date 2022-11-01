@@ -1,0 +1,59 @@
+//colores
+$color-rojo: rgb(174, 30, 12);
+$color-gradienterojo: linear-gradient(0deg, rgba(174, 30, 12, 1) 0%, rgba(200, 67, 52, 1) 47%, rgba(209, 134, 127, 1) 100%);
+
+$color-rojo-claro: #dc4040;
+$color-rojo2: #bd190ac8;
+$color-rojo-fuerte: rgb(102, 4, 4);
+$color-rojo-claro2: #e97d7d;
+
+
+$color-azul: rgb(31, 32, 45);
+$color-gradienteazul: linear-gradient(90deg, rgba(31, 32, 45, 1) 0%, rgba(9, 9, 121, 1) 30%, rgba(0, 254, 255, 0.7427171552214635) 100%);
+$color-azul-fuerte: #041441;
+
+
+$color-azul2: rgb(5,26,246);
+$color-gradienteazul2: radial-gradient(circle, rgba(5,26,246,1) 0%, rgba(241,80,6,1) 50%, rgba(70,132,252,1) 100%); 
+
+$color-blanco: #fff;
+
+$color-negro: rgba(0, 0, 0, .4);
+
+$color-gris: rgb(86, 85, 85);
+$color-gris-claro: #c9c9c9;
+$color-gris-2: #303030;
+
+$color-celeste: rgb(127, 195, 255);
+
+$color-marron: rgb(91, 63, 58);
+$color-marron-claro: #d2aa82;
+
+$color-verde: rgb(47, 143, 6);
+
+
+
+//sombras y bordes
+$box-shadow: 10px 15px 24px -4px rgba(0, 0, 0, 0.57);
+$box-shadow2: 3px 3px 3px 0px #0c0e15;
+$box-shadow3: 10px 10px 5px 0px #0c0e15;
+$box-shadow-form: 0 5px 10px rgba(0, 0, 0, 0.35);
+
+$border-negro: #0c0e15 solid 2px;
+$border-azul: #071aa9 solid 2px;
+
+
+
+// font sizes
+$font-1rem: 1rem;
+$font-10px: 10px;
+$font-15px: 15px;
+$font-25px: 25px;
+
+//Pixel
+$pixel-1px: 1px;
+$pixel-10px: 10px;
+$pixel-15px: 15px;
+$pixel-45px: 45px;
+$pixel-50px: 50px;
+$pixel-100px: 100px;

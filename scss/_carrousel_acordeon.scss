@@ -1,0 +1,238 @@
+/*--desde aqui armo seccion del sub nav
+armo lista desplegable en acordeon!--*/
+
+/*contenedor principal*/
+
+.content-menu {
+    padding-left: $pixel-10px;
+    width: $pixel-100px*3;
+
+    button {
+        a {
+            display: block;
+            font-size: $pixel-10px*2;
+            padding: $pixel-15px;
+            color: $color-blanco;
+        }
+
+        width: 100%;
+        font-weight: bold;
+        background: linear-gradient(to bottom, #212222, #62676f);
+        border: 1px solid $color-negro;
+        text-align: left;
+
+        &:focus {
+            background: $color-gris;
+            background: linear-gradient(90deg, rgba(85, 81, 81, 1) 0%, rgba(214, 212, 212, 1) 100%);
+
+            ul {
+                max-height: $pixel-100px*5;
+                transition: max-height 1s;
+            }
+        }
+
+        p {
+            font-size: $font-10px*2;
+            padding: $pixel-15px;
+            color: $color-blanco;
+        }
+
+        ul {
+            max-height: 0;
+            transition: max-height 0.25s;
+            overflow: hidden;
+        }
+    }
+
+    li {
+        ul {
+            li {
+                a {
+                    display: block;
+                    font-size: $pixel-10px*2;
+                    color: $color-gris;
+                    background-color: $color-blanco;
+
+                    &:hover {
+                        color: $color-gris;
+                        background-color: $color-blanco;
+                    }
+                }
+            }
+        }
+
+        &:nth-of-type(1) {
+            button {
+                border-radius: 0 22px 0 0;
+            }
+        }
+
+        &:nth-of-type(5) {
+            button {
+                border-radius: 0 0 0 22px;
+            }
+        }
+    }
+
+    i {
+        margin: 0px 8px;
+    }
+}
+
+
+
+/*-- carrousel--*/
+@keyframes cambio
+
+{
+	0% {
+		margin-left: 0;
+	}
+	20% {
+		margin-left: 0;
+	}
+	25% {
+		margin-left: -100%;
+	}
+	45% {
+		margin-left: -100%;
+	}
+	50% {
+		margin-left: -200%;
+	}
+	70% {
+		margin-left: -200%;
+	}
+	75% {
+		margin-left: -300%;
+	}
+	100% {
+		margin-left: -300%;
+	}
+}
+.slider {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+	ul {
+		display: flex;
+		padding: 0;
+		width: 400%;
+		animation: cambio 20s infinite alternate ease-in;
+	}
+	li {
+		width: 100%;
+		list-style: none;
+	}
+	img {
+		width: 100%;
+	}
+}
+
+/*--FIN CURSOS--*/
+
+
+/*acordeon*/
+/* Aquí definimos las Custom properties */
+
+:root {
+    --negro: $color-negro;
+    --blanco: $color-blanco;
+    --sombra-ppal: $color-gris-claro;
+    --sombra-sec: $color-blanco;
+    --borde-negro: $color-negro;
+    --marcado: $color-celeste;
+    /* Tipografía */
+    --tipo-principal: Helvetica, Arial, sans-serif;
+}
+
+/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --negro: $color-gris-claro:;
+        --blanco: $color-gris-2;
+        --sombra-ppal: $color-negro;
+        --sombra-sec: $color-gris;
+        --borde-negro: $color-gris;
+    }
+}
+
+
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+::-moz-selection {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+::selection {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+.acordeon {
+    width: 90%;
+    max-width: 20rem;
+    padding: 2rem;
+    color: var(--negro);
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-radius: 1rem;
+    background-color: var(--blanco);
+    -webkit-box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.acordeon .bloque {
+    margin: 0 0 1rem;
+    padding: 1rem;
+    color: var(--negro);
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-radius: 1rem;
+    background-color: var(--blanco);
+    -webkit-box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.acordeon .h2 {
+    margin: 0 0 1rem;
+    padding: 1rem;
+    color: var(--negro);
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-radius: 1rem;
+    background-color: var(--blanco);
+    -webkit-box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    cursor: pointer;
+}
+
+.acordeon .h2:hover {
+    color: var(--negro);
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-radius: 1rem;
+    background-color: var(--blanco);
+    -webkit-box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 0.4rem 0.4rem 0.8rem var(--sombra-ppal), inset -0.4rem -0.4rem 0.8rem var(--sombra-sec);
+    box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 0.4rem 0.4rem 0.8rem var(--sombra-ppal), inset -0.4rem -0.4rem 0.8rem var(--sombra-sec);
+}
+
+.acordeon .contenido {
+    height: 0;
+    padding: 0rem;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.acordeon .bloque.activo .contenido {
+    height: 4rem;
+}

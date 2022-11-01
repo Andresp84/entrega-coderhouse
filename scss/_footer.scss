@@ -1,0 +1,67 @@
+
+/*--DESDE ACA FOOTER--*/
+.bg-footer {
+    background-color: $color-rojo2;
+    padding: $pixel-10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    
+}
+
+/*--footer para eso es esto me quedaron las clases que
+reutilice antes estaban en el header los baje al footer--*/
+.bg-header1 {
+    background-color: $color-rojo-claro2;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    align-content: stretch;
+}
+
+.type-nombre {
+    font-size: $font-10px*2;
+    color: $color-blanco;
+
+    &:hover {
+        background-color: $color-rojo-claro2;
+    }
+}
+
+.redes {
+    a {
+        i {
+            font-size: $font-25px;
+            text-align: center;
+            padding: 1px 8px;
+
+            &:hover {
+                transform: scale(1.5);
+                transition: all 1s ease;
+            }
+        }
+    }
+}
+
+.igap {
+    &:hover {
+        color: $color-rojo-claro;
+    }
+}
+
+.fbap {
+    &:hover {
+        color: $color-azul-fuerte;
+    }
+}
+
+.wsap {
+    &:hover {
+        color: $color-verde;
+    }
+}
+
+/*--HASTA ACA FOOTER--*/

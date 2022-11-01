@@ -1,0 +1,20 @@
+
+/*--titulo en la seccion de productos--*/
+
+.palette-headers {
+	margin: $pixel-10px $pixel-10px $pixel-10px;
+	h1 {
+		margin: $pixel-10px 0;
+		text-transform: uppercase;
+		font: 700 $font-25px 'Comfortaa', sans-serif;
+		letter-spacing: 4px;
+		color: $color-azul-fuerte;
+	}
+	h2 {
+		color: $color-gris;
+		line-height: 1.5;
+		width: 50vw;
+		margin: 5 5px;
+		font-size: $font-10px*2;
+	}
+}

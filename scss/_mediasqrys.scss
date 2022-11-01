@@ -1,0 +1,967 @@
+$breackpoints: (
+    ssm: 300px,
+    sm: 540px,
+    md: 768px,
+    lg: 1024px
+);
+
+@mixin media-up ($breackpoints) {
+
+    @media screen and (min-width: map-get($breackpoints,
+            $breackpoint)) {
+        @content;
+    }
+
+}
+
+/*--a ver esto--*/
+$vista: tablet;
+$h1Desktop: 20px;
+$parrafoDesktop: 22px;
+$h1Mobile: 10px;
+$parrafoMobile: 12px;
+
+body {
+    @if $vista ==desktop {
+        @media only screen and (min-width:1024px) {
+            h1 {
+                font-size: $h1Desktop;
+            }
+
+            h3 {
+                font-size: 35px;
+            }
+
+            p {
+                font-size: $parrafoDesktop;
+            }
+        }
+    }
+
+    @else if $vista ==mobile {
+        @media only screen and (max-width:767px) {
+            h1 {
+                font-size: $h1Mobile;
+            }
+
+            h3 {
+                font-size: 25px;
+            }
+
+            p {
+                font-size: $parrafoMobile;
+            }
+        }
+    }
+
+    @else {
+        h1 {
+            font-size: 34px;
+        }
+
+        h3 {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+
+/*---!!!!!!MEDIA QUERIES!!!!!!!!!!!!!!!!---*/
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+    .df-header {
+        flex-direction: column;
+    }
+
+    .card-index2 {
+        flex-direction: column;
+    }
+
+    .ap-img1 {
+        width: $pixel-100px*2;
+    }
+
+    .bg-card2 {
+        width: 100vw;
+    }
+
+    .border-card2 {
+        width: 100vw;
+        font: 400 $pixel-10px*2 'Comfortaa', sans-serif;
+    }
+
+    .border-card2 {
+        width: 100vw;
+        font: 400 $pixel-10px*2 'Comfortaa', sans-serif;
+    }
+
+    .bg-container {
+        flex-direction: column;
+        padding-top: $pixel-100px*8;
+        margin-top: $pixel-100px;
+        width: 50vw;
+        height: 50vh;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .bg-container h2 {
+        font: 600 $pixel-10px*3 'Comfortaa', sans-serif;
+
+    }
+
+    .bg-container h3 {
+        font: 600 $pixel-10px*2 'Comfortaa', sans-serif;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .bg-container2 {
+        padding-top: $pixel-100px*7;
+        margin-top: $pixel-100px;
+        flex-direction: column;
+    }
+
+    .cursos {
+        width: 80vw;
+        flex-direction: column;
+    }
+
+    .df-main-contacto {
+        padding-top: $pixel-100px*8;
+        margin-top: $pixel-100px;
+        flex-direction: column;
+        width: 80vw;
+    }
+
+    .contenido {
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-form {
+        width: 100vw;
+        padding: 0 0 $pixel-10px*2 0;
+    }
+
+    .card {
+        width: $pixel-100px*3+$pixel-50px;
+    }
+
+    .back {
+        font: 400 $pixel-10px 'Comfortaa', sans-serif;
+    }
+
+    .grid2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, min-content);
+        grid-template-areas: "menub"
+            "productos"
+            "servicios";
+    }
+
+
+    .menu {
+        width: 100vw;
+
+    }
+
+    .content-menu {
+        padding-top: 10px;
+        width: 100vw;
+
+    }
+
+    .productos {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .palette-headers {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+
+    .palette-headers h1 {
+        text-transform: uppercase;
+        font: 700 $pixel-10px*2 'Comfortaa', sans-serif;
+        letter-spacing: 4px;
+        color: #041441;
+
+    }
+
+    .palette-headers h2 {
+        color: $color-gris;
+        line-height: 1.5;
+        width: 100vw;
+        margin: 0 5px;
+        font: 700 $pixel-10px*2 'Comfortaa', sans-serif;
+    }
+
+    .body-index {
+        width: 100vw;
+        padding: 0;
+    }
+
+    .df-ul {
+        flex-direction: column;
+        padding: $pixel-10px 0;
+        margin: $pixel-10px 0;
+    }
+
+    .df-cursos {
+        flex-direction: column;
+        text-align: center;
+        width: 90vw;
+        margin: $pixel-15px;
+
+    }
+
+    .w-img-cursos {
+        width: 85vw;
+        margin: ($pixel-10px/2);
+    }
+
+    .idx-ap-boton2 {
+        justify-content: center;
+    }
+
+    .style-h1 {
+        text-align: center;
+    }
+
+    .bg-footer {
+        font-size: 5px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-self: flex-end;
+        margin-top: $pixel-15px*3;
+        width: 100%;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        flex-wrap: wrap;
+    }
+
+    .type-nombre {
+        margin: $pixel-10px (
+            $pixel-10px/2
+        );
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    font-size: 20px;
+}
+
+.w-logo {
+    width: $pixel-10px*6;
+}
+
+.nombre {
+    font-size: 2rem;
+}
+
+.seudo {
+    font-size: 1.5rem;
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, min-content);
+    grid-template-areas: "header"
+        "nav"
+        "productos"
+        "servicios";
+}
+
+.m-p-cursos23 {
+    font-size: 1.5rem;
+    flex-direction: column;
+    padding: 20px;
+    width: 90vw;
+}
+
+
+
+
+}
+
+
+/*--desde aqui 1 -*/
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    .df-header {
+        flex-direction: column;
+    }
+
+    .card {
+        width: $pixel-100px*2+$pixel-45px*2;
+    }
+
+    .back {
+        font: 600 $pixel-15px 'Comfortaa', sans-serif;
+    }
+
+    .grid2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, min-content);
+        grid-template-areas: "menub"
+            "productos"
+            "servicios";
+    }
+
+    .menu {
+        width: 80vw;
+
+    }
+
+    .content-menu {
+        padding-top: $pixel-10px;
+        width: 60vw;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .productos {
+        width: 100vw;
+    }
+
+    .palette-headers {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+
+    .palette-headers h1 {
+        text-transform: uppercase;
+        font: 700 $font-10px*2 'Comfortaa', sans-serif;
+        letter-spacing: 4px;
+        color: $color-azul-fuerte;
+
+    }
+
+    .palette-headers h2 {
+        color: $color-gris;
+        line-height: 1.5;
+        width: 100vw;
+        margin: 0 ($pixel-10px/2);
+        font: 600 $font-10px*1.5 'Comfortaa', sans-serif;
+    }
+
+    .body-index {
+        width: 100vw;
+        padding: 0;
+    }
+
+    .df-ul {
+        flex-direction: row;
+        padding: $pixel-10px 0;
+        margin: $pixel-10px 0;
+    }
+
+    .df-cursos {
+        flex-direction: column;
+        text-align: center;
+        width: 90vw;
+        margin: $pixel-15px;
+    }
+
+    .w-img-cursos {
+        width: 85vw;
+        margin: 5px;
+    }
+
+    .idx-ap-boton2 {
+        justify-content: center;
+    }
+
+    .style-h1 {
+        text-align: center;
+    }
+
+    .bg-container {
+        padding-top: $pixel-100px*7;
+        margin-top: $pixel-100px;
+        flex-direction: end;
+    }
+
+    .bg-container2 {
+        padding-top: $pixel-100px*7;
+        margin-top: $pixel-100px;
+        flex-direction: column;
+    }
+
+    .cursos {
+        padding: $pixel-10px;
+        margin: $pixel-10px*2;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .bg-footer {
+        font-size: ($font-10px/2);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: $pixel-100px*3;
+        align-self: flex-end;
+
+
+    }
+
+    .type-nombre {
+        margin: $pixel-10px (
+            $pixel-10px/2
+        );
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido {
+    width: min-content;
+}
+
+.main-form {
+    width: min-content;
+    padding: 0 0 $pixel-10px*2 0;
+}
+
+
+.df-main-contacto {
+    padding-top: $pixel-100px*8;
+    margin-top: $pixel-100px;
+    flex-direction: end;
+}
+
+.logo {
+    font-size: $font-10px*2;
+}
+
+.w-logo {
+    width: $pixel-50px+$pixel-10px;
+}
+
+.nombre {
+    font-size: $font-1rem*2;
+}
+
+.seudo {
+    font-size: $font-1rem*1.5;
+}
+
+.card-index2 {
+    flex-direction: column;
+}
+
+.ap-img1 {
+    width: $pixel-100px*2;
+}
+
+.bg-card2 {
+    width: 100vw;
+}
+
+.border-card2 {
+    width: 100vw;
+    font: 400 $pixel-10px*2 'Comfortaa', sans-serif;
+}
+
+.border-card2 {
+    width: 100vw;
+    font: 400 $pixel-10px*2 'Comfortaa', sans-serif;
+}
+
+.bg-container {
+    flex-direction: column;
+    padding-top: $pixel-100px*8;
+    margin-top: $pixel-100px;
+    width: 50vw;
+    height: 50vh;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.bg-container h2 {
+    font: 600 $pixel-10px*3 'Comfortaa', sans-serif;
+
+}
+
+.bg-container h3 {
+    font: 600 $pixel-10px*2 'Comfortaa', sans-serif;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.bg-container2 {
+    padding-top: $pixel-100px*7;
+    margin-top: $pixel-100px;
+    flex-direction: column;
+}
+
+.cursos {
+    width: 80vw;
+    flex-direction: column;
+}
+
+.df-main-contacto {
+    padding-top: $pixel-100px*8;
+    margin-top: $pixel-100px;
+    flex-direction: column;
+    width: 80vw;
+}
+
+.contenido {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-form {
+    width: 100vw;
+    padding: 0 0 $pixel-10px*2 0;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, min-content);
+    grid-template-areas: "header"
+        "nav"
+        "productos"
+        "servicios";
+}
+
+.m-p-cursos23 {
+    font-size: 1.5rem;
+    flex-direction: column;
+    padding: 20px;
+    width: 90vw;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+.bg-footer {
+    font-size: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    margin-top: $pixel-15px*3;
+    width: 100%;
+}
+
+
+}
+
+
+/*--desde aqui 1 -*/
+@media screen and (min-width: 801px) and (max-width: 1022px) {
+    .df-header {
+        flex-direction: column;
+    }
+
+    .card {
+        width: $pixel-100px*3;
+    }
+
+    .back {
+        font: 600 $pixel-15px 'Comfortaa', sans-serif;
+    }
+
+    .grid2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, min-content);
+        grid-template-areas: "menub"
+            "productos"
+            "servicios";
+    }
+
+    .menu {
+        width: 80vw;
+
+    }
+
+    .content-menu {
+        padding-top: $pixel-10px;
+        width: 50vw;
+
+    }
+
+    .productos {
+        width: 100vw;
+    }
+
+    .palette-headers {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+
+    .palette-headers h1 {
+        text-transform: uppercase;
+        font: 700 $pixel-10px*2 'Comfortaa', sans-serif;
+        letter-spacing: 4px;
+        color: #041441;
+
+    }
+
+    .palette-headers h2 {
+        color: rgb(120, 119, 119);
+        line-height: 1.5;
+        width: 100vw;
+        margin: 0 5px;
+        font: 700 $pixel-10px*2 'Comfortaa', sans-serif;
+    }
+
+    .body-index {
+        width: 100vw;
+        padding: 0;
+    }
+
+    .df-ul {
+        flex-direction: row;
+        padding: $pixel-10px 0;
+        margin: $pixel-10px 0;
+    }
+
+    .df-cursos {
+        flex-direction: column;
+        text-align: center;
+        width: 90vw;
+        margin: $pixel-10px;
+    }
+
+    .w-img-cursos {
+        width: 85vw;
+        margin: ($pixel-10px/2);
+    }
+
+    .idx-ap-boton2 {
+        justify-content: center;
+    }
+
+    .style-h1 {
+        text-align: center;
+    }
+
+    .bg-container {
+        padding-top: $pixel-100px*7;
+        margin-top: $pixel-100px;
+        flex-direction: end;
+    }
+
+    .bg-container2 {
+        padding-top: $pixel-100px*7;
+        margin-top: $pixel-100px;
+        flex-direction: column;
+    }
+
+    .cursos {
+        padding: $pixel-10px;
+        margin: $pixel-10px*2;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .bg-footer {
+        font-size: 5px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: $pixel-100px*10;
+        align-self: flex-end;
+
+    }
+
+    .type-nombre {
+        margin: $pixel-10px (
+            $pixel-10px/2
+        );
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido {
+    width: min-content;
+}
+
+.main-form {
+    width: min-content;
+    padding: 0 0 $pixel-10px*2 0;
+}
+
+
+.df-main-contacto {
+    padding-top: $pixel-100px*8;
+    margin-top: $pixel-100px;
+    flex-direction: end;
+}
+
+.logo {
+    font-size: 20px;
+}
+
+.w-logo {
+    width: $pixel-10px*6;
+}
+
+.nombre {
+    font-size: 2rem;
+}
+
+.seudo {
+    font-size: 1.5rem;
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, min-content);
+    grid-template-areas: "header"
+        "nav"
+        "productos"
+        "servicios";
+}
+
+.m-p-cursos23 {
+    font-size: 1.5rem;
+    flex-direction: column;
+    padding: 20px;
+    width: 90vw;
+}
+
+}
+
+
+/*--desde aqui 1 -*/
+@media screen and (min-width: 1023px) and (max-width: 1800px) {
+    .df-header {
+        flex-direction: column;
+    }
+
+    .card {
+        width: $pixel-100px*3;
+    }
+
+    .back {
+        font: 600 $pixel-15px 'Comfortaa', sans-serif;
+    }
+
+    .grid2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, min-content);
+        grid-template-areas: "menub"
+            "productos"
+            "servicios";
+    }
+
+    .menu {
+        width: 80vw;
+
+    }
+
+    .content-menu {
+        padding-top: $pixel-10px;
+        width: 30vw;
+
+    }
+
+    .productos {
+        width: 100vw;
+    }
+
+    .palette-headers {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+
+    .palette-headers h1 {
+        text-transform: uppercase;
+        font: 700 $pixel-10px*2 'Comfortaa', sans-serif;
+        letter-spacing: 4px;
+        color: #041441;
+
+    }
+
+    .palette-headers h2 {
+        color: rgb(120, 119, 119);
+        line-height: 1.5;
+        width: 100vw;
+        margin: 0 5px;
+        font: 700 $pixel-10px*2 'Comfortaa', sans-serif;
+    }
+
+    .body-index {
+        width: 100vw;
+        padding: 0;
+    }
+
+    .df-ul {
+        flex-direction: row;
+        padding: $pixel-10px 0;
+        margin: $pixel-10px 0;
+    }
+
+    .df-cursos {
+        flex-direction: column;
+        text-align: center;
+        width: 100vw;
+        margin: $pixel-15px;
+    }
+
+    .w-img-cursos {
+        width: 85vw;
+        margin: ($pixel-10px/2);
+    }
+
+    .idx-ap-boton2 {
+        justify-content: center;
+    }
+
+    .style-h1 {
+        text-align: center;
+    }
+
+    .bg-container {
+        padding-top: $pixel-100px*7;
+        margin-top: $pixel-100px;
+        flex-direction: end;
+    }
+
+    .bg-container2 {
+        padding-top: $pixel-100px*7;
+        margin-top: $pixel-100px;
+        flex-direction: column;
+    }
+
+    .cursos {
+        padding: $pixel-10px;
+        margin: $pixel-10px*2;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .bg-footer {
+        font-size: 5px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-self: flex-end;
+        margin-top: $pixel-100px*10;
+    }
+
+    .type-nombre {
+        margin: $pixel-10px (
+            $pixel-10px/2
+        );
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido {
+    width: min-content;
+}
+
+.main-form {
+    width: min-content;
+    padding: 0 0 $pixel-10px*2 0;
+}
+
+
+.df-main-contacto {
+    padding-top: $pixel-100px*8;
+    margin-top: $pixel-100px;
+    flex-direction: end;
+}
+
+.logo {
+    font-size: $pixel-10px*1;
+}
+
+.w-logo {
+    width: $pixel-10px*6;
+}
+
+.nombre {
+    font-size: 2rem;
+}
+
+.seudo {
+    font-size: 1.5rem;
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, min-content);
+    grid-template-areas: "header"
+        "nav"
+        "productos"
+        "servicios";
+
+}
+
+.m-p-cursos23 {
+    font-size: 1.5rem;
+    flex-direction: column;
+    padding: 20px;
+    width: 90vw;
+}
+
+}

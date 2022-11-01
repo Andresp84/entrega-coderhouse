@@ -1,0 +1,94 @@
+
+/*-- LO NUEVO CAMBIANDO LO ANTERIOR--*/
+.grid2 {
+    display: grid;
+    grid-template-areas:
+        "menub productos productos"
+        "menub servicios servicios";
+    grid-template-columns: min-content 1fr 1fr;
+    grid-template-rows: min-content min-content;
+    grid-column-gap: $pixel-10px;
+    grid-row-gap: $pixel-15px;
+
+}
+
+.menu {
+    grid-area: menub;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.productos {
+    grid-area: productos;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.servicios {
+    grid-area: servicios;
+}
+
+
+
+/*--AQUI COMIENZA RELACIONES--*/
+.grid {
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "nav productos productos publicidad"
+        "servicios servicios servicios publicidad";
+    grid-template-rows: 5% 1fr 2fr 50px;
+    grid-template-columns: 20% auto 30%;
+    grid-column-gap: $pixel-10px;
+    grid-row-gap: $pixel-15px;
+    height: 100vh;
+    margin: 0;
+
+}
+
+.border {
+    border: $border-negro;
+}
+
+nav {
+    grid-area: nav;
+}
+
+section#productos {
+    grid-area: productos;
+
+}
+
+section#servicios {
+    grid-area: servicios;
+}
+
+
+aside {
+    grid-area: publicidad;
+}
+
+/*---espiritualidad---*/
+
+#espiritualidad {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	width: 90%;
+	margin: 5%;
+	grid-gap: $pixel-15px*2;
+	img {
+		width: 100%;
+		transition: all 300ms;
+		position: relative;
+		&:hover {
+			transform: scale(1.15);
+		}
+	}
+}
+#logo {
+	width: 25%;
+	padding: $pixel-10px;
+}

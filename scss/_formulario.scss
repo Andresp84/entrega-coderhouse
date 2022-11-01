@@ -1,0 +1,157 @@
+/*-- inicio formulario de contacto de nosotros--*/
+.df-main-contacto {
+    border-top: $pixel-100px;
+    padding-top: $pixel-50px+$pixel-45px;
+    margin-top: $pixel-50px+$pixel-10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+        padding: $pixel-10px;
+        font-weight: bold;
+        color: $color-rojo-claro;
+        font-size: $pixel-45px;
+        text-align: center;
+        text-shadow: $box-shadow2;
+    }
+}
+
+.main-form {
+    width: 40vw;
+    margin: $pixel-10px 0;
+    background: $color-gris-claro;
+    background: linear-gradient(179deg, #c3bbbb 0%, #432e2d 80%);
+    background: -webkit-linear-gradient(179deg, #c3bbbb 0%, #432e2d 80%);
+    background: -moz-linear-gradient(179deg, #c3bbbb 0%, #432e2d 80%);
+    border-radius: $pixel-10px;
+    padding: $pixel-10px;
+    color: $color-blanco;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textarea {
+    resize: none;
+    height: auto;
+    width: 100%;
+}
+
+.contenido {
+    width: 50%;
+    padding: $pixel-10px*3;
+    border-radius: $pixel-10px;
+    text-align: center;
+    box-shadow: $box-shadow-form;
+    background: $color-rojo-claro;
+    background: linear-gradient(169deg, #dc4040 0%, #370201 80%);
+    background: -webkit-linear-gradient(169deg, #dc4040 0%, #370201 80%);
+    background: -moz-linear-gradient(169deg, #dc4040 0%, #370201 80%);
+}
+
+.estilo-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.label {
+    text-align: center;
+    width: $pixel-100px*3;
+    font-weight: bold;
+}
+
+.input {
+    display: block;
+    width: $pixel-100px*3;
+    border-radius: 5px;
+    font-size: $font-1rem;
+    margin: 6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    outline: none;
+    padding: auto;
+    border: 1px solid $color-gris-claro;
+}
+
+.boton-form {
+    outline: none;
+    color: $color-blanco;
+    border: none;
+    background-color: $color-azul-fuerte;
+    font-size: $font-10px*2;
+    text-transform: uppercase;
+    padding: $pixel-10px;
+    border-radius: ($pixel-10px/2);
+
+    &:hover {
+        background-color: $color-celeste;
+    }
+}
+
+.formulario-cont {
+    margin: $pixel-10px 0;
+    text-align: center;
+}
+
+/*--fin formulario de contacto de nosotros--*/
+
+/*--FIN DE CURSOS Y NOVEDADES--*/
+
+/*--INICIO REGISTRO DE MAIL--*/
+/*--FIN REGISTRO DE MAIL--*/
+.form {
+    width: 100%;
+    max-width: $pixel-100px*4;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+
+    input {
+        width: 90%;
+        height: $pixel-10px*3;
+        margin: 0.5rem;
+
+    }
+
+    button {
+        padding: 0.5em 1em;
+        border: none;
+        background: $color-celeste;
+        cursor: pointer;
+        font-weight: lighter;
+        border: $border-azul;
+        font-size: $font-15px;
+        text-decoration: none;
+
+
+    }
+
+}
+
+.bg-container2 {
+    padding: $pixel-50px*2;
+    margin: $pixel-50px;
+    height: $pixel-100px*2;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex;
+
+    h3 {
+        font-weight: bold;
+        color: $color-negro;
+        font-size: $font-10px*2;
+        text-align: center;
+    }
+
+}
+
+
+/*--FIN REGISTRO DE MAIL--*/
