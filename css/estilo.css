@@ -1502,7 +1502,7 @@ body p {
   }
   .w-img-cursos {
     width: 80vw;
-    margin: 5px;
+    margin-bottom: 10px;
   }
   .idx-ap-boton2 {
     justify-content: center;
@@ -1679,8 +1679,8 @@ body p {
     margin: 15px;
   }
   .w-img-cursos {
-    width: 85vw;
-    margin: 5px;
+    width: 60vw;
+    margin-bottom: 40px;
   }
   .idx-ap-boton2 {
     justify-content: center;
@@ -1710,7 +1710,7 @@ body p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 400px;
     align-self: flex-end;
   }
   .type-nombre {
@@ -1940,8 +1940,8 @@ body p {
     margin: 10px;
   }
   .w-img-cursos {
-    width: 85vw;
-    margin: 5px;
+    width: 40vw;
+    margin-bottom: 40px;
   }
   .idx-ap-boton2 {
     justify-content: center;
@@ -2136,8 +2136,8 @@ body p {
     margin: 15px;
   }
   .w-img-cursos {
-    width: 85vw;
-    margin: 5px;
+    width: 40vw;
+    margin-bottom: 40px;
   }
   .idx-ap-boton2 {
     justify-content: center;
@@ -2263,6 +2263,23 @@ body p {
     margin-bottom: 30px;
     margin-left: 20px;
     margin-right: 20px;
+  }
+}
+/*--ESPECIAL -*/
+@media screen and (min-width: 425px) and (max-width: 850px) {
+  .w-img-cursos {
+    width: 60vw;
+    margin-bottom: 40px;
+  }
+}
+/*--ESPECIAL -*/
+@media screen and (min-width: 768px) and (max-width: 827px) {
+  .w-img-cursos {
+    width: 60vw;
+    margin-bottom: 40px;
+  }
+  .servicios {
+    margin-bottom: 40px;
   }
 }
 html,

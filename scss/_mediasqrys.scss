@@ -234,7 +234,7 @@ body {
 
     .w-img-cursos {
         width: 80vw;
-        margin: ($pixel-10px/2);
+        margin-bottom: $pixel-10px;
     }
 
     .idx-ap-boton2 {
@@ -467,8 +467,8 @@ body {
     }
 
     .w-img-cursos {
-        width: 85vw;
-        margin: 5px;
+        width: 60vw;
+        margin-bottom: $pixel-10px*4;
     }
 
     .idx-ap-boton2 {
@@ -504,7 +504,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: $pixel-100px*2;
+        margin-top: $pixel-100px*4;
         align-self: flex-end;
 
 
@@ -722,6 +722,7 @@ body{
 }
 
 }
+
 /*--desde aqui 1 -*/
 @media screen and (min-width: 801px) and (max-width: 1022px) {
     .df-header {
@@ -806,8 +807,8 @@ body{
     }
 
     .w-img-cursos {
-        width: 85vw;
-        margin: ($pixel-10px/2);
+        width: 40vw;
+        margin-bottom: $pixel-10px*4;
     }
 
     .idx-ap-boton2 {
@@ -1057,8 +1058,8 @@ body{
     }
 
     .w-img-cursos {
-        width: 85vw;
-        margin: ($pixel-10px/2);
+        width: 40vw;
+        margin-bottom: $pixel-10px*4;
     }
 
     .idx-ap-boton2 {
@@ -1222,6 +1223,29 @@ body{
         margin-right: 20px;
     }
 }
+
+
+}
+
+
+/*--ESPECIAL -*/
+@media screen and (min-width: 425px) and (max-width: 850px) {
+    .w-img-cursos {
+        width: 60vw;
+        margin-bottom: $pixel-10px*4;
+    }
+}
+/*--ESPECIAL -*/
+@media screen and (min-width: 768px) and (max-width: 827px) {
+    .w-img-cursos {
+        width: 60vw;
+        margin-bottom: $pixel-10px*4;
+    }
+
+    .servicios {      
+        margin-bottom: $pixel-10px*4;
+    }
+
 
 
 }
