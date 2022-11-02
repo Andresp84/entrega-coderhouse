@@ -57,3 +57,66 @@ $pixel-15px: 15px;
 $pixel-45px: 45px;
 $pixel-50px: 50px;
 $pixel-100px: 100px;
+
+
+
+$color1: #3c9e33;
+$color2: #121212;
+$color3: #3c9e3396;
+$color4: #3c9e3327;
+
+
+
+@mixin flex-column-center-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin estilocajasprocesadores {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.424);
+    height: 230px;
+    width: 210px;
+    border: $color1 solid 1px;
+    margin: 5% 0;
+    transition: transform 0.3s ease-in-out
+}
+
+@mixin listaintel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@mixin estilosh1h2 {
+    padding: 4px;
+    text-shadow: 2px 2px 10px $color1;
+    border-style: outset;
+    border-radius: 4px;
+    border-color: $color1;
+    background-color: $color2;
+    color: $color-blanco;
+}
+
+@mixin estilodescripensambles {
+    color: $color-blanco;
+    font-size: 14px;
+    width: 100%;
+    max-width: 270px;
+    text-align: inherit;
+    margin: auto;
+    text-shadow: 0 0 5px black;
+
+        &:first-of-type {
+            text-transform: capitalize;
+            font-size: 20px;
+            text-shadow: 0 0 5px rgb(43, 255, 0);
+        }
+}

@@ -467,3 +467,111 @@ FUE ANTES DE VER GRID ETC ETC ETC --*/
 	background: $color-gradienteazul2;
 	overflow: hidden;
 }
+
+/*---manualidades---*/
+
+
+.contenedorcatalogo {
+	@include flex-column-center-center;
+	flex-wrap: wrap;
+
+	.jumbotron {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.411)), url(../img/descarga.jpeg);
+		background-size: cover;
+		background-position: center;
+		height: $pixel-100px*3;
+		color: $color-blanco;
+		text-shadow: 1px 1px 5px $color-rojo;
+		border-radius: 0;
+		margin-bottom: $pixel-10px*2;
+
+		.jumbotitle {
+			text-align: center;
+			text-transform: capitalize;
+			font-style: oblique;
+			font-size: 24px;
+			margin-top: $pixel-15px*2;
+		}
+
+		.jumbodescript {
+			text-align: center;
+			font-size: $font-15px+$pixel-1px;
+			padding: $font-10px*2;
+		}
+	}
+}
+
+.container-fluid {
+	max-width: $pixel-100px*3.1;
+	@include flex-column-center-center;
+	height: auto;
+
+	.contenedorequipo {
+		width: 100%;
+		height: 100%;
+		margin-bottom: $pixel-15px*2;
+
+		figure {
+			position: relative;
+			max-width: 100%;
+			max-height: 100%;
+			overflow: hidden;
+			box-shadow: 0 0 10px 2px;
+			cursor: pointer;
+			margin: 0;
+
+			img {
+				width: 100%;
+				height: 100%;
+				transition: all 500ms ease-in-out;
+			}
+
+			.descripcioncapa {
+				position: absolute;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.7);
+				opacity: 0;
+				visibility: hidden;
+				text-align: center;
+
+				h3 {
+					color: #ffffff;
+					font-weight: 400;
+					font-size: 15px;
+					margin-bottom: 120px;
+					transition: all 500ms ease-out;
+					margin-top: 30px;
+					text-shadow: 0 0 7px $color-rojo-claro;
+				}
+
+				.textdes {
+					p {
+						@include estilodescripensambles;
+
+					}
+				}
+			}
+
+			&:hover {
+				>.descripcioncapa {
+					opacity: 1;
+					visibility: visible;
+
+					h3 {
+						margin-top: 10px;
+						margin-bottom: 10px;
+						font-size: 15px;
+					}
+				}
+
+				>img {
+					transform: scale(1.3);
+				}
+			}
+		}
+	}
+
+
+}

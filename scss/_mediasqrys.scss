@@ -233,7 +233,7 @@ body {
     }
 
     .w-img-cursos {
-        width: 85vw;
+        width: 80vw;
         margin: ($pixel-10px/2);
     }
 
@@ -251,7 +251,7 @@ body {
         align-items: center;
         justify-content: center;
         align-self: flex-end;
-        margin-top: $pixel-15px*3;
+        margin-top: $pixel-15px*2;
         width: 100%;
     }
 
@@ -308,6 +308,76 @@ body {
 
 
 
+.contenedorpadrecatalogo {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .art {
+        justify-content: center;
+        margin-top: 5%;
+        display: flex;
+        height: 280px;
+        width: 280px;
+
+        .linkcatalogo {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 250px;
+            width: 250px;
+
+            .arttitle {
+                text-align: center;
+                font-size: 18px;
+            }
+
+            .imagescatalogo {
+                height: 230px;
+                width: 230px;
+            }
+
+        }
+    }
+
+
+}
+
+.jumbotron {
+    height: 400px;
+    max-width: 100%;
+    margin-top: 50px;
+    .jumbodescript {
+        font-size: 18px;
+    }
+
+    .jumbotitle {
+        margin-top: 20%;
+    }
+
+}
+
+.container-fluid {
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+
+    .contenedorequipo {
+        width: 300px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+}
+
 }
 
 
@@ -322,7 +392,7 @@ body {
     }
 
     .back {
-        font: 600 $pixel-15px 'Comfortaa', sans-serif;
+        font: 400 $pixel-15px 'Comfortaa', sans-serif;
     }
 
     .grid2 {
@@ -434,7 +504,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: $pixel-100px*3;
+        margin-top: $pixel-100px*2;
         align-self: flex-end;
 
 
@@ -584,14 +654,74 @@ body{
     align-items: center;
     justify-content: center;
     align-self: flex-end;
-    margin-top: $pixel-15px*3;
+    margin-top: $pixel-15px*2;
     width: 100%;
 }
 
 
+
+
+
+.contenedorpadrecatalogo {
+    .art {
+        height: 320px;
+        width: 320px;
+
+        .linkcatalogo {
+            height: 320px;
+            width: 320px;
+
+            .arttitle {
+                font-size: 20px;
+            }
+
+            .imagescatalogo {
+                height: 270px;
+                width: 270px;
+            }
+        }
+    }
 }
 
 
+.jumbotron {
+    height: 400px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .jumbotitle {
+        margin-top: 5%;
+    }
+
+    .jumbodescript {
+        text-align: center;
+        font-size: 20px;
+        width: 60%;
+    }
+}
+
+.container-fluid {
+    max-width: 1024px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+    .contenedorequipo {
+        width: 300px;
+        height: auto;
+        margin-bottom: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+}
 /*--desde aqui 1 -*/
 @media screen and (min-width: 801px) and (max-width: 1022px) {
     .df-header {
@@ -603,7 +733,7 @@ body{
     }
 
     .back {
-        font: 600 $pixel-15px 'Comfortaa', sans-serif;
+        font: 400 $pixel-15px 'Comfortaa', sans-serif;
     }
 
     .grid2 {
@@ -713,7 +843,7 @@ body{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: $pixel-100px*10;
+        margin-top: $pixel-10px*2;
         align-self: flex-end;
 
     }
@@ -737,7 +867,7 @@ body{
 
 
 .df-main-contacto {
-    padding-top: $pixel-100px*8;
+    padding-top: $pixel-100px*5;
     margin-top: $pixel-100px;
     flex-direction: end;
 }
@@ -780,6 +910,70 @@ body{
 }
 
 
+.contenedorpadrecatalogo {
+    margin-top: 30px;
+
+    .art {
+        margin: 0;
+        height: 400px;
+        width: 400px;
+
+        .linkcatalogo {
+            height: 350px;
+            width: 400px;
+
+            .arttitle {
+                text-align: center;
+                font-size: 20px;
+            }
+
+            .imagescatalogo {
+                height: 300px;
+                width: 320px;
+            }
+        }
+    }
+}
+
+.jumbotron {
+    height: 550px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .jumbotitle {
+        font-size: 36px;
+        margin-top: 5%;
+        text-align: left;
+    }
+
+    .jumbodescript {
+        align-self: center;
+        font-size: 26px;
+        width: 60%;
+    }
+
+}
+
+.container-fluid {
+    max-width: 1500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+    .contenedorequipo {
+        width: 300px;
+        height: auto;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
 /*--desde aqui 1 -*/
 @media screen and (min-width: 1023px) and (max-width: 1800px) {
     .df-header {
@@ -791,7 +985,7 @@ body{
     }
 
     .back {
-        font: 600 $pixel-15px 'Comfortaa', sans-serif;
+        font: 400 $pixel-15px 'Comfortaa', sans-serif;
     }
 
     .grid2 {
@@ -901,7 +1095,7 @@ body{
         align-items: center;
         justify-content: center;
         align-self: flex-end;
-        margin-top: $pixel-100px*10;
+        margin-top: $pixel-10px*4;
     }
 
     .type-nombre {
@@ -963,5 +1157,71 @@ body{
     padding: 20px;
     width: 90vw;
 }
+
+
+.contenedorpadrecatalogo {
+    margin-top: 30px;
+
+    .art {
+        margin: 0;
+        height: 400px;
+        width: 400px;
+
+        .linkcatalogo {
+            height: 350px;
+            width: 400px;
+
+            .arttitle {
+                text-align: center;
+                font-size: 20px;
+            }
+
+            .imagescatalogo {
+                height: 300px;
+                width: 320px;
+            }
+        }
+    }
+}
+
+.jumbotron {
+    height: 550px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .jumbotitle {
+        font-size: 36px;
+        margin-top: 5%;
+        text-align: left;
+    }
+
+    .jumbodescript {
+        align-self: center;
+        font-size: 26px;
+        width: 60%;
+    }
+
+}
+
+.container-fluid {
+    max-width: 1500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+    .contenedorequipo {
+        width: 300px;
+        height: auto;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
 
 }
