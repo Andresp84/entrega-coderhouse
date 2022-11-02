@@ -432,18 +432,18 @@ FUE ANTES DE VER GRID ETC ETC ETC --*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 10px 10px;
+	margin: $pixel-15px $pixel-15px;
 	box-shadow: $box-shadow;
 	-webkit-box-shadow: $box-shadow;
 	-moz-box-shadow: $box-shadow;
 	color: $color-azul-fuerte;
-
 }
 
+
 .w-img-cursos {
-	width: 25%;
-	height: 25%;
+	width: 50%;
 	margin: $pixel-10px;
+	padding: $pixel-10px;
 }
 
 
